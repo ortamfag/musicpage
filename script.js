@@ -7,7 +7,7 @@ const title = document.querySelector('.song')
 const audio = document.querySelector('.audio')
 
 // Названия песен
-const songs = ['pigs', 'pigs1']
+const songs = ['童话故事', '童话故事1']
 
 // Песня по умолчанию
 let songIndex = 0

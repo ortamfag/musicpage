@@ -143,5 +143,10 @@ main{
 }
 
 .progress__duration{
-    display: none;
+    display: block;
+    font-family: 'Proxima Nova Regular';
+    width: 5px;
+    height: 5px;
+    margin-top: 5px;
+    padding-bottom: 5px;
 }
