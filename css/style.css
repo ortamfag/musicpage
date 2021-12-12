@@ -141,3 +141,7 @@ main{
 .song{
     font-family: 'Proxima Nova Regular';
 }
+
+.progress__duration{
+    display: none;
+}
