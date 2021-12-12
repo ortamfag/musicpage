@@ -137,3 +137,7 @@ main{
     border-radius: 5px;
     width: 0%;
 }
+
+.song{
+    font-family: 'Proxima Nova Regular';
+}
