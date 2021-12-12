@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    user-select: none; 
 }
 
 @font-face {
@@ -143,10 +144,8 @@ main{
 }
 
 .progress__duration{
-    display: block;
+    display: flex;
     font-family: 'Proxima Nova Regular';
-    width: 5px;
-    height: 5px;
     margin-top: 5px;
     padding-bottom: 5px;
 }

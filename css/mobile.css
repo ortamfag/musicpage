@@ -29,3 +29,9 @@
         width: 100%;
     }
 }
+
+@media (max-width: 350px) {
+    .background{
+        height: 115%;
+    }
+}

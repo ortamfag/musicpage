@@ -46,13 +46,36 @@ playBtn.addEventListener('click', () => {
 
 // Progress Bar
 
-function updateProgress(e) {
-    const {duration, currentTime} = e.srcElement
-    const progressPercent = (currentTime / duration) * 100
-    progress.style.width = `${progressPercent}%`
 
-}
-audio.addEventListener('timeupdate', updateProgress)
+audio.addEventListener('timeupdate', (e) => {
+    const currentTime = e.target.currentTime;
+    const duration = e.target.duration;
+    let progressWidth = (currentTime / duration) * 100
+    progress.style.width = `${progressWidth}%`
+
+
+    let musicCurrentTime = document.querySelector(".current")
+    let musicDuration = document.querySelector(".duration")
+
+    audio.addEventListener("loadeddata", () => {
+        let audioDuration = audio.duration
+        let totalMin = Math.floor(audioDuration / 60)
+        let totalSec = Math.floor(audioDuration % 60)
+        if (totalSec < 10) {
+            totalSec = `0${totalSec}`
+        }
+        musicDuration.innerHTML = `${totalMin}:${totalSec}`
+    })
+    
+        let currentMin = Math.floor(currentTime / 60)
+        let currentSec = Math.floor(currentTime % 60)
+        if (currentSec < 10) {
+            currentSec = `0${currentSec}`
+        }
+        musicCurrentTime.innerHTML = `${currentMin}:${currentSec}`
+    
+    
+})
 
 // Set progress
 function setProgress(e) {
@@ -63,3 +86,9 @@ function setProgress(e) {
     audio.currentTime = (clickX / width) * duration
 }
 progressContainer.addEventListener('click', setProgress)
+
+//Duration
+
+function audioTime(){
+
+}
