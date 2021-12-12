@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/x-icon" href="public/favicon.png" rel="shortcut icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mobile.css">
-    <title>Document</title>
+    <title>Lucy&Leo Educational Puzzles</title>
 </head>
 <body>
     
@@ -25,11 +26,18 @@
                 <p>The Three Little Pigs</p>
             </div>
 
-            <div class="main__wrapper-audio">
-                <audio controls>
-                    <source src="public/book-puzzle-v1.mp3" type="audio/mpeg">
-                    Ваш браузер не поддерживает тег audio.
-                </audio>
+            <div class="player">
+                <div class="player__pause">
+
+                </div>
+
+                <div class="player__inner">
+                    <p class="song">The Three Little Pigs</p>
+
+                    <div class="progress__container">
+                        <div class="progress"></div>
+                    </div>
+                </div>
             </div>
 
             <div class="main__wrapper-bottom">
@@ -47,5 +55,7 @@
             </div>
         </div>
     </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
