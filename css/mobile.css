@@ -35,3 +35,21 @@
         height: 115%;
     }
 }
+
+@media (min-height: 671px){
+    body{
+        height: 823px;
+    }
+}
+
+@media (width: 768px) {
+    body{
+        height: 1100px;
+    }
+}
+
+@media (width: 1024px) {
+    body{
+        height: 1366px;
+    }
+}

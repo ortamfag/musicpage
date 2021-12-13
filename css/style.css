@@ -25,18 +25,24 @@
     font-style: normal;
 }
 
+body{
+    background: url(../public/pigsblur.jpg) no-repeat;
+    background-size: cover;
+}
+
 main{
     z-index: 2;
     position: relative;
     display: flex;
-    height: 100vh;
+    height: 100%;
     width: 100%;
 }
 
 .main__wrapper{
     width: 375px;
     z-index: 2;
-    margin: auto;
+    margin: 0 auto;
+    padding: 10% 0;
 }
 
 .main__wrapper-img{
